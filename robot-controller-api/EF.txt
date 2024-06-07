@@ -1,0 +1,576 @@
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: https://localhost:7166
+info: Microsoft.Hosting.Lifetime[14]
+      Now listening on: http://localhost:5190
+info: Microsoft.Hosting.Lifetime[0]
+      Application started. Press Ctrl+C to shut down.
+info: Microsoft.Hosting.Lifetime[0]
+      Hosting environment: Development
+info: Microsoft.Hosting.Lifetime[0]
+      Content root path: C:\Users\Daiyan Khan\OneDrive\Desktop\Daiyan\STUDY\Deakin\Year 2 Trim 1\SIT331BackendDev\4.3D Advanced ORM\robot-controller-api
+dbug: 09-05-2024 18:32:04.800 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Creating DbConnection.
+dbug: 09-05-2024 18:32:04.823 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Created DbConnection. (27ms).
+dbug: 09-05-2024 18:32:04.825 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:04.942 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:04.945 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command)
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 09-05-2024 18:32:04.949 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command)
+      Created DbCommand for 'ExecuteReader' (3ms).
+dbug: 09-05-2024 18:32:04.950 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command)
+      Initialized DbCommand for 'ExecuteReader' (5ms).
+dbug: 09-05-2024 18:32:04.955 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command)
+
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.createddate, r.description, r.ismovecommand, r.modifieddate, r."Name"
+      FROM robotcommand AS r
+      ORDER BY r.id
+info: 09-05-2024 18:32:04.977 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (22ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.createddate, r.description, r.ismovecommand, r.modifieddate, r."Name"
+      FROM robotcommand AS r
+      ORDER BY r.id
+dbug: 09-05-2024 18:32:05.048 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command)
+      Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:05.055 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command)
+      A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 75ms reading results.
+dbug: 09-05-2024 18:32:05.058 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:05.062 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closed connection to database 'postgres' on server 'tcp://localhost:5432' (4ms).
+dbug: 09-05-2024 18:32:10.442 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Creating DbConnection.
+dbug: 09-05-2024 18:32:10.442 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Created DbConnection. (0ms).
+dbug: 09-05-2024 18:32:10.443 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:10.443 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:10.444 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command)
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 09-05-2024 18:32:10.445 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command)
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:32:10.450 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command)
+      Initialized DbCommand for 'ExecuteReader' (6ms).
+dbug: 09-05-2024 18:32:10.457 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command)
+
+      Executing DbCommand [Parameters=[@__name_0='Vice City'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM robotmap AS r
+          WHERE r.name = @__name_0)
+info: 09-05-2024 18:32:10.477 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (26ms) [Parameters=[@__name_0='Vice City'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM robotmap AS r
+          WHERE r.name = @__name_0)
+dbug: 09-05-2024 18:32:10.481 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command)
+      Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:10.481 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command)
+      A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 4ms reading results.
+dbug: 09-05-2024 18:32:10.482 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:10.483 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+dbug: 09-05-2024 18:32:10.666 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:10.666 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:10.669 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command)
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 09-05-2024 18:32:10.669 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command)
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:32:10.670 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command)
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 09-05-2024 18:32:10.670 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command)
+
+      Executing DbCommand [Parameters=[@p0='600', @p1='2024-05-09T18:32:10.4835639+10:00', @p2=NULL, @p3='2024-05-09T18:32:10.4835639+10:00', @p4='Vice City' (Nullable = false), @p5='600'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO robotmap (columns, createddate, description, modifieddate, name, rows)
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+      RETURNING id, issquare;
+info: 09-05-2024 18:32:10.680 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (9ms) [Parameters=[@p0='600', @p1='2024-05-09T18:32:10.4835639+10:00', @p2=NULL, @p3='2024-05-09T18:32:10.4835639+10:00', @p4='Vice City' (Nullable = false), @p5='600'], CommandType='Text', CommandTimeout='30']
+      INSERT INTO robotmap (columns, createddate, description, modifieddate, name, rows)
+      VALUES (@p0, @p1, @p2, @p3, @p4, @p5)
+      RETURNING id, issquare;
+dbug: 09-05-2024 18:32:10.706 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command)
+      Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:10.706 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command)
+      A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 25ms reading results.
+dbug: 09-05-2024 18:32:10.707 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:10.707 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+fail: Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware[1]
+      An unhandled exception has occurred while executing the request.
+      System.InvalidOperationException: No route matches the supplied values.
+         at Microsoft.AspNetCore.Mvc.CreatedAtRouteResult.OnFormatting(ActionContext context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsyncCore(ActionContext context, ObjectResult result, Type objectType, Object value)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ObjectResultExecutor.ExecuteAsync(ActionContext context, ObjectResult result)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeNextResultFilterAsync[TFilter,TFilterAsync]()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+      --- End of stack trace from previous location ---
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+         at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+         at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+dbug: 09-05-2024 18:32:22.955 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Creating DbConnection.
+dbug: 09-05-2024 18:32:22.956 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Created DbConnection. (0ms).
+dbug: 09-05-2024 18:32:22.956 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:22.956 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:22.956 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command)
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 09-05-2024 18:32:22.957 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command)
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:32:22.957 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command)
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:32:22.957 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command)
+
+      Executing DbCommand [Parameters=[@__name_0='Vice City'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM robotmap AS r
+          WHERE r.name = @__name_0)
+info: 09-05-2024 18:32:22.959 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (1ms) [Parameters=[@__name_0='Vice City'], CommandType='Text', CommandTimeout='30']
+      SELECT EXISTS (
+          SELECT 1
+          FROM robotmap AS r
+          WHERE r.name = @__name_0)
+dbug: 09-05-2024 18:32:22.959 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command)
+      Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:22.960 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command)
+      A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+dbug: 09-05-2024 18:32:22.960 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:22.960 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+dbug: 09-05-2024 18:32:29.394 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Creating DbConnection.
+dbug: 09-05-2024 18:32:29.394 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Created DbConnection. (0ms).
+dbug: 09-05-2024 18:32:29.394 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:29.395 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:29.395 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command)
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 09-05-2024 18:32:29.395 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command)
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:32:29.396 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command)
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:32:29.396 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command)
+
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.columns, r.createddate, r.description, r.issquare, r.modifieddate, r.name, r.rows
+      FROM robotmap AS r
+info: 09-05-2024 18:32:29.398 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (2ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.columns, r.createddate, r.description, r.issquare, r.modifieddate, r.name, r.rows
+      FROM robotmap AS r
+dbug: 09-05-2024 18:32:29.399 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command)
+      Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:29.399 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command)
+      A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+dbug: 09-05-2024 18:32:29.400 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:29.400 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+dbug: 09-05-2024 18:32:41.066 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Creating DbConnection.
+dbug: 09-05-2024 18:32:41.070 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Created DbConnection. (4ms).
+dbug: 09-05-2024 18:32:41.075 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:41.075 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:41.075 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command)
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 09-05-2024 18:32:41.075 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command)
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:32:41.076 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command)
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:32:41.076 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command)
+
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.columns, r.createddate, r.description, r.issquare, r.modifieddate, r.name, r.rows
+      FROM robotmap AS r
+info: 09-05-2024 18:32:41.077 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.columns, r.createddate, r.description, r.issquare, r.modifieddate, r.name, r.rows
+      FROM robotmap AS r
+dbug: 09-05-2024 18:32:41.078 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command)
+      Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:41.080 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command)
+      A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+dbug: 09-05-2024 18:32:41.082 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:41.082 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+dbug: 09-05-2024 18:32:47.309 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Creating DbConnection.
+dbug: 09-05-2024 18:32:47.309 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Created DbConnection. (0ms).
+dbug: 09-05-2024 18:32:47.309 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:47.310 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:47.310 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command)
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 09-05-2024 18:32:47.310 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command)
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:32:47.310 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command)
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:32:47.311 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command)
+
+      Executing DbCommand [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.columns, r.createddate, r.description, r.issquare, r.modifieddate, r.name, r.rows
+      FROM robotmap AS r
+      WHERE r.id = @__p_0
+      LIMIT 1
+info: 09-05-2024 18:32:47.312 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (2ms) [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.columns, r.createddate, r.description, r.issquare, r.modifieddate, r.name, r.rows
+      FROM robotmap AS r
+      WHERE r.id = @__p_0
+      LIMIT 1
+dbug: 09-05-2024 18:32:47.313 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command)
+      Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:47.313 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command)
+      A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+dbug: 09-05-2024 18:32:47.313 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:47.313 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+dbug: 09-05-2024 18:32:52.931 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Creating DbConnection.
+dbug: 09-05-2024 18:32:52.932 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Created DbConnection. (1ms).
+dbug: 09-05-2024 18:32:52.932 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:52.932 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:52.932 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command)
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 09-05-2024 18:32:52.933 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command)
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:32:52.933 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command)
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:32:52.936 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command)
+
+      Executing DbCommand [Parameters=[@__p_0='1'], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.columns, r.createddate, r.description, r.issquare, r.modifieddate, r.name, r.rows
+      FROM robotmap AS r
+      WHERE r.id = @__p_0
+      LIMIT 1
+info: 09-05-2024 18:32:52.937 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (2ms) [Parameters=[@__p_0='1'], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.columns, r.createddate, r.description, r.issquare, r.modifieddate, r.name, r.rows
+      FROM robotmap AS r
+      WHERE r.id = @__p_0
+      LIMIT 1
+dbug: 09-05-2024 18:32:52.937 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command)
+      Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:52.938 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command)
+      A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+dbug: 09-05-2024 18:32:52.938 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:52.938 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+dbug: 09-05-2024 18:32:52.952 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:52.953 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:52.953 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command)
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 09-05-2024 18:32:52.953 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command)
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:32:52.954 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command)
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:32:52.954 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command)
+
+      Executing DbCommand [Parameters=[@p0='1'], CommandType='Text', CommandTimeout='30']
+      DELETE FROM robotmap
+      WHERE id = @p0;
+info: 09-05-2024 18:32:52.958 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (4ms) [Parameters=[@p0='1'], CommandType='Text', CommandTimeout='30']
+      DELETE FROM robotmap
+      WHERE id = @p0;
+dbug: 09-05-2024 18:32:52.959 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command)
+      Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:52.959 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command)
+      A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+dbug: 09-05-2024 18:32:52.959 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:32:52.960 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+dbug: 09-05-2024 18:33:01.363 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Creating DbConnection.
+dbug: 09-05-2024 18:33:01.364 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Created DbConnection. (0ms).
+dbug: 09-05-2024 18:33:01.364 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:01.364 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:01.366 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command)
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 09-05-2024 18:33:01.366 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command)
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:33:01.366 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command)
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:33:01.366 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command)
+
+      Executing DbCommand [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.columns, r.createddate, r.description, r.issquare, r.modifieddate, r.name, r.rows
+      FROM robotmap AS r
+      WHERE r.id = @__p_0
+      LIMIT 1
+info: 09-05-2024 18:33:01.368 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (2ms) [Parameters=[@__p_0='2'], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.columns, r.createddate, r.description, r.issquare, r.modifieddate, r.name, r.rows
+      FROM robotmap AS r
+      WHERE r.id = @__p_0
+      LIMIT 1
+dbug: 09-05-2024 18:33:01.369 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command)
+      Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:01.369 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command)
+      A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+dbug: 09-05-2024 18:33:01.369 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:01.370 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+dbug: 09-05-2024 18:33:09.287 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Creating DbConnection.
+dbug: 09-05-2024 18:33:09.288 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Created DbConnection. (0ms).
+dbug: 09-05-2024 18:33:09.292 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:09.292 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:09.293 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command)
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 09-05-2024 18:33:09.293 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command)
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:33:09.297 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command)
+      Initialized DbCommand for 'ExecuteReader' (4ms).
+dbug: 09-05-2024 18:33:09.299 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command)
+
+      Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.createddate, r.description, r.ismovecommand, r.modifieddate, r."Name"
+      FROM robotcommand AS r
+      ORDER BY r.id
+info: 09-05-2024 18:33:09.302 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (3ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.createddate, r.description, r.ismovecommand, r.modifieddate, r."Name"
+      FROM robotcommand AS r
+      ORDER BY r.id
+dbug: 09-05-2024 18:33:09.303 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command)
+      Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:09.303 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command)
+      A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+dbug: 09-05-2024 18:33:09.303 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:09.303 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+dbug: 09-05-2024 18:33:16.894 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Creating DbConnection.
+dbug: 09-05-2024 18:33:16.895 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Created DbConnection. (1ms).
+dbug: 09-05-2024 18:33:16.895 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:16.896 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:16.896 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command)
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 09-05-2024 18:33:16.896 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command)
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:33:16.896 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command)
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:33:16.896 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command)
+
+      Executing DbCommand [Parameters=[@__id_0='6'], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.createddate, r.description, r.ismovecommand, r.modifieddate, r."Name"
+      FROM robotcommand AS r
+      WHERE r.id = @__id_0
+      LIMIT 1
+info: 09-05-2024 18:33:16.898 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (1ms) [Parameters=[@__id_0='6'], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.createddate, r.description, r.ismovecommand, r.modifieddate, r."Name"
+      FROM robotcommand AS r
+      WHERE r.id = @__id_0
+      LIMIT 1
+dbug: 09-05-2024 18:33:16.898 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command)
+      Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:16.898 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command)
+      A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+dbug: 09-05-2024 18:33:16.898 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:16.899 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+dbug: 09-05-2024 18:33:16.904 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:16.904 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:16.905 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command)
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 09-05-2024 18:33:16.905 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command)
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:33:16.905 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command)
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:33:16.905 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command)
+
+      Executing DbCommand [Parameters=[@__id_0='6'], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.createddate, r.description, r.ismovecommand, r.modifieddate, r."Name"
+      FROM robotcommand AS r
+      WHERE r.id = @__id_0
+      LIMIT 1
+info: 09-05-2024 18:33:16.907 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (1ms) [Parameters=[@__id_0='6'], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.createddate, r.description, r.ismovecommand, r.modifieddate, r."Name"
+      FROM robotcommand AS r
+      WHERE r.id = @__id_0
+      LIMIT 1
+dbug: 09-05-2024 18:33:16.907 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command)
+      Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:16.907 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command)
+      A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+dbug: 09-05-2024 18:33:16.907 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:16.908 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+dbug: 09-05-2024 18:33:16.917 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:16.917 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:16.917 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command)
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 09-05-2024 18:33:16.917 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command)
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:33:16.918 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command)
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:33:16.918 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command)
+
+      Executing DbCommand [Parameters=[@p0='6'], CommandType='Text', CommandTimeout='30']
+      DELETE FROM robotcommand
+      WHERE id = @p0;
+info: 09-05-2024 18:33:16.920 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (2ms) [Parameters=[@p0='6'], CommandType='Text', CommandTimeout='30']
+      DELETE FROM robotcommand
+      WHERE id = @p0;
+dbug: 09-05-2024 18:33:16.920 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command)
+      Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:16.921 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command)
+      A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+dbug: 09-05-2024 18:33:16.921 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:16.921 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+dbug: 09-05-2024 18:33:31.401 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Creating DbConnection.
+dbug: 09-05-2024 18:33:31.402 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Created DbConnection. (0ms).
+dbug: 09-05-2024 18:33:31.402 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:31.402 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:31.402 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command)
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 09-05-2024 18:33:31.402 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command)
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:33:31.403 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command)
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:33:31.403 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command)
+
+      Executing DbCommand [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.createddate, r.description, r.ismovecommand, r.modifieddate, r."Name"
+      FROM robotcommand AS r
+      WHERE r.id = @__id_0
+      LIMIT 1
+info: 09-05-2024 18:33:31.404 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (1ms) [Parameters=[@__id_0='1'], CommandType='Text', CommandTimeout='30']
+      SELECT r.id, r.createddate, r.description, r.ismovecommand, r.modifieddate, r."Name"
+      FROM robotcommand AS r
+      WHERE r.id = @__id_0
+      LIMIT 1
+dbug: 09-05-2024 18:33:31.405 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command)
+      Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:31.405 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command)
+      A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+dbug: 09-05-2024 18:33:31.405 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:31.405 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+dbug: 09-05-2024 18:33:31.413 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:31.414 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:31.414 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command)
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 09-05-2024 18:33:31.414 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command)
+      Created DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:33:31.414 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command)
+      Initialized DbCommand for 'ExecuteReader' (0ms).
+dbug: 09-05-2024 18:33:31.414 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command)
+
+      Executing DbCommand [Parameters=[@p5='1', @p0='2022-07-30T00:00:00.0000000', @p1=NULL, @p2='False', @p3='2022-07-30T00:00:00.0000000', @p4='RIGHT' (Nullable = false)], CommandType='Text', CommandTimeout='30']
+      UPDATE robotcommand SET createddate = @p0, description = @p1, ismovecommand = @p2, modifieddate = @p3, "Name" = @p4
+      WHERE id = @p5;
+info: 09-05-2024 18:33:31.417 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (3ms) [Parameters=[@p5='1', @p0='2022-07-30T00:00:00.0000000', @p1=NULL, @p2='False', @p3='2022-07-30T00:00:00.0000000', @p4='RIGHT' (Nullable = false)], CommandType='Text', CommandTimeout='30']
+      UPDATE robotcommand SET createddate = @p0, description = @p1, ismovecommand = @p2, modifieddate = @p3, "Name" = @p4
+      WHERE id = @p5;
+dbug: 09-05-2024 18:33:31.418 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command)
+      Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:31.418 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command)
+      A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 0ms reading results.
+dbug: 09-05-2024 18:33:31.419 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:31.419 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
+dbug: 09-05-2024 18:33:41.328 RelationalEventId.ConnectionCreating[20005] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Creating DbConnection.
+dbug: 09-05-2024 18:33:41.328 RelationalEventId.ConnectionCreated[20006] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Created DbConnection. (0ms).
+dbug: 09-05-2024 18:33:41.328 RelationalEventId.ConnectionOpening[20000] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opening connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:41.329 RelationalEventId.ConnectionOpened[20001] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Opened connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:41.329 RelationalEventId.CommandCreating[20103] (Microsoft.EntityFrameworkCore.Database.Command)
+      Creating DbCommand for 'ExecuteReader'.
+dbug: 09-05-2024 18:33:41.330 RelationalEventId.CommandCreated[20104] (Microsoft.EntityFrameworkCore.Database.Command)
+      Created DbCommand for 'ExecuteReader' (1ms).
+dbug: 09-05-2024 18:33:41.330 RelationalEventId.CommandInitialized[20106] (Microsoft.EntityFrameworkCore.Database.Command)
+      Initialized DbCommand for 'ExecuteReader' (1ms).
+dbug: 09-05-2024 18:33:41.332 RelationalEventId.CommandExecuting[20100] (Microsoft.EntityFrameworkCore.Database.Command)
+
+      Executing DbCommand [Parameters=[@p0='0001-01-01T00:00:00.0000000', @p1=NULL, @p2='False', @p3='0001-01-01T00:00:00.0000000', @p4='JUMP' (Nullable = false)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO robotcommand (createddate, description, ismovecommand, modifieddate, "Name")
+      VALUES (@p0, @p1, @p2, @p3, @p4)
+      RETURNING id;
+info: 09-05-2024 18:33:41.334 RelationalEventId.CommandExecuted[20101] (Microsoft.EntityFrameworkCore.Database.Command)
+      Executed DbCommand (3ms) [Parameters=[@p0='0001-01-01T00:00:00.0000000', @p1=NULL, @p2='False', @p3='0001-01-01T00:00:00.0000000', @p4='JUMP' (Nullable = false)], CommandType='Text', CommandTimeout='30']
+      INSERT INTO robotcommand (createddate, description, ismovecommand, modifieddate, "Name")
+      VALUES (@p0, @p1, @p2, @p3, @p4)
+      RETURNING id;
+dbug: 09-05-2024 18:33:41.335 RelationalEventId.DataReaderClosing[20301] (Microsoft.EntityFrameworkCore.Database.Command)
+      Closing data reader to 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:41.335 RelationalEventId.DataReaderDisposing[20300] (Microsoft.EntityFrameworkCore.Database.Command)
+      A data reader for 'postgres' on server 'tcp://localhost:5432' is being disposed after spending 1ms reading results.
+dbug: 09-05-2024 18:33:41.335 RelationalEventId.ConnectionClosing[20002] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closing connection to database 'postgres' on server 'tcp://localhost:5432'.
+dbug: 09-05-2024 18:33:41.335 RelationalEventId.ConnectionClosed[20003] (Microsoft.EntityFrameworkCore.Database.Connection)
+      Closed connection to database 'postgres' on server 'tcp://localhost:5432' (0ms).
