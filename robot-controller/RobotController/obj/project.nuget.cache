@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "PlI76pHzihMA3U8y+DTJl/IiikAH7S+qngdvJSamVp6tkO//4G+XQmHJnVq/xr8RuiRO2a0p5DTKNZw5zUP2Ag==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Daiyan Khan\\OneDrive\\Desktop\\Daiyan\\STUDY\\Deakin\\Year 2 Trim 1\\SIT331BackendDev\\3.2P Full API Implementation\\3.2P-resources\\robot-controller\\RobotController\\RobotController.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Daiyan Khan\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
+    "C:\\Users\\Daiyan Khan\\.nuget\\packages\\system.io.abstractions\\13.2.47\\system.io.abstractions.13.2.47.nupkg.sha512",
+    "C:\\Users\\Daiyan Khan\\.nuget\\packages\\system.io.filesystem.accesscontrol\\5.0.0\\system.io.filesystem.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\Daiyan Khan\\.nuget\\packages\\system.security.accesscontrol\\5.0.0\\system.security.accesscontrol.5.0.0.nupkg.sha512",
+    "C:\\Users\\Daiyan Khan\\.nuget\\packages\\system.security.principal.windows\\5.0.0\\system.security.principal.windows.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
